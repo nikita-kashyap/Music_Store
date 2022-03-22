@@ -1,0 +1,208 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin:0;
+	background-color:dodgerblue;
+	overflow-x:hidden;
+}
+#topnav{
+	position:fixed;
+	right:0;
+	z-index:2;
+	overflow:hidden;	
+	transition:width .5s;
+}
+#topnav a{
+	background:dodgerblue;
+	padding:15 40;
+	text-decoration:none;
+	border-bottom:2px solid transparent;
+	color:white;
+	float:left;
+	cursor:hand;
+	text-shadow:0 0 10px silver;
+	transition:all .5s;
+}
+#closeNav{
+	display:none;
+	cursor:hand;
+}
+#topnav a:hover{
+	border-bottom:2px solid aqua;
+}
+#roundedpic{
+	position:absolute;
+	left:10px;
+	top:10px;
+	height:100px;
+	width:100px;
+	background-size:cover;
+	z-index:1;
+}
+#Starter{
+	width:100%;
+	height:100%;
+	position:relative;
+	background-image:url('cloud.png');
+	background-position:bottom;
+	background-size:cover;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+#name{
+	background-image: linear-gradient(90deg,red,rgb(255,100,0));
+	font-size: 100px;
+	-webkit-background-clip: text;
+	margin:0;
+	color: transparent;
+}
+.m{ opacity:0;
+	position:absolute;
+	bottom:0px;
+	animation:musicanime 5s linear;
+	animation-iteration-count:infinite;
+}
+#m1{
+	left:90%;
+	width:20px;
+	animation-delay:2s;
+}
+#m2{
+	left:9%;
+	width:80px;
+	animation-delay:5s;
+}
+#m3{
+	left:27%;
+	width:40px;
+	animation-delay:7s;
+}
+#m4{
+	left:45%;
+	width:90px;
+	animation-delay:1s;
+}
+#m5{
+	left:63%;
+	width:20px;
+	animation-delay:4s;
+}
+#m6{
+	left:81%;
+	width:50px;
+	animation-delay:6s;
+}
+@keyframes musicanime{
+	0%{opacity:0;bottom:0%;}
+	40%{opacity:1;}
+	90%{opacity:0;bottom:100%;}
+}
+.btnjoin{
+	padding:30px 80px;
+	font-size:30px;
+	border:2px solid rgb(0,150,255);
+	cursor:hand;
+	transition:all .5s;
+	text-decoration:none;
+	background:rgb(0,150,255);
+	color:white;
+	position:relative;
+	margin:1%;	
+}
+.btnjoin:hover{
+	box-shadow:0 0 10px grey;
+	background:white;
+	color:rgb(0,150,255);
+}
+.btnjoin span{
+	position:absolute;
+	top:7px;
+	left:51px;
+	transition: .2s;
+}
+.btnjoin span::after{
+	content:url(musicIco.png);
+	position:absolute;
+	top:-3px;
+	right:-70px;
+	opacity:0;
+	transition: .2s;
+}
+.btnjoin:hover span{left:25px;}
+.btnjoin:hover span:after{opacity:1;}
+#cardcontainer{
+		display:flex;
+		background-image:linear-gradient(to top, dodgerblue, white);
+		width:100%;
+		height:auto;
+		flex-wrap:wrap;
+		justify-content:center;
+}
+.card{	margin:3%;
+		padding:1%;
+		width:250px;
+		height:300px;
+		background-color:aqua;
+		box-shadow:0px 5px 10px black;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		transition: .5s;
+}
+.card img{
+		width:60%;
+		height:auto;
+		cursor:hand;
+		transition: .5s;
+		}
+.card:hover{
+		box-shadow:0px 0px 15px rgba(0,0,64,.8),0px 0px 25px rgba(0,0,64,.6),0px 0px 35px rgba(0,0,64,.4),0px 0px 45px rgba(0,0,64,.2);
+		transform:translateY(-5px);
+		}
+		
+		
+		
+		
+		
+		
+		
+#contacts{
+	padding:50px 0px 100px 0px;
+	height:auto;
+	width:100%;
+	background:rgb(10,10,10);
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items:center;	
+}
+.link{
+	text-decoration:none;
+	color:white;
+}
+.link:hover{color:silver;}
+#contacts div{
+	display:flex;
+	flex-direction:column;
+	text-align:center;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
+.contactHead{
+	color:aqua;
+	text-shadow:0 0 25px aqua;
+	text-align:center;
+}
+#credit{
+	color:silver;
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+	text-align:center;
+	text-decoration:none;
+}
